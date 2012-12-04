@@ -163,7 +163,7 @@
       <li>data is partitioned over a cluster</li>
       <li>no single point of failure</li>
       <li>ability to store a wide range of value types</li>
-      <li></li>
+      <li>don't need to know what your data looks like ahead of time</li>
       <li></li>
     </ul>
   </div>
@@ -177,7 +177,7 @@
       <li>can assign MIME types to values, ideal for storing blobs</li>
       <li>very low latency</li>
       <li>"Basho really focused on write availability so they could go back to sleep"</li>
-      <li></li>
+      <li>can also use Google Protocol Buffers for extra efficient binary encoding</li>
     </ul>
   </div>
 </section>
@@ -186,11 +186,11 @@
   <h1>Why not Riak/<br/>Distributed Key-Value?</h1>
   <div role="note">
     <ul>
+      <li>you have a rigid schema</li>
       <li>key-value stores have trouble linking values (no foreign keys)</li>
       <li>poor support for ad-hoc queries</li>
       <li>CAP theorem: Consistent, Available, Partition Tolerant: pick two</li>
       <li>conflict resolution falls back to the client (vector clocks)</li>
-      <li></li>
     </ul>
   </div>
 </section>
@@ -208,7 +208,115 @@
   </div>
 </section>
 
+<section>
+  <div style="text-align: center; margin-top:10%;">
+    <img src="images/hbase.jpg" height="80%" />
+  </div>
+  <div role="note">
+    <ul>
+      <li>based on Google BigTable</li>
+      <li>built on top of Apache Hadoop ecosystem, a scalable computing platform</li>
+      <li>used by Facebook, Stumbleupon, Twitter, eBay, Meetup, Yahoo!
+      <li>released in 2009 under Apache 2.0 license</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div style="text-align: center; margin-top:10%;">
+    <img src="images/nailgun.jpg" height="80%" />
+  </div>
+  <div role="note">
+    <ul>
+      <li>nail guns are for big jobs</li>
+      <li>you wouldn't use one to build a dolls house for example</li>
+      <li>of your data is not measured in at least GB, it's the wrong tools</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h1>Columnar</h1>
+  <div role="note">
+    <ul>
+      <li>evil twin of RDBMS, looks the same but very different</li>
+      <li>tables are basically maps of maps</li>
+      <li>tables use arbitrary strings as keys that map to rows</li>
+      <li>row keys are composed of a column family and column name</li>
+      <li>values are uninterpreted arrays of bytes</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h1>Why Columnar?</h1>
+  <div role="note">
+    <ul>
+      <li>scalability, data partitioned into chunks of rows called regions</li>
+      <li>regions are distributed across cluster</li>
+      <li>good at scanning through enormous data sets (big queries)</li>
+      <li>column families can be tuned independently for performance</li>
+      <li></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h1>Why HBase?</h1>
+  <div role="note">
+    <ul>
+      <li>compression and in-memory tables</li>
+      <li>versioning and garbage collection</li>
+      <li>built in JRuby shell</li>
+      <li>huge community</li>
+      <li></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h1>Why not HBase/Columnar?</h1>
+  <div role="note">
+    <ul>
+      <li>HBase is a complete PITA to set up and administer</li>
+      <li>HBase recommends minimum of five nodes</li>
+      <li>HBase has no sorting or indexing other than row keys</li>
+      <li>HBase has no datatypes, all data is uniterpreted</li>
+      <li>HBase is CP with best effort on Availability</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h1>What makes HBase special?</h1>
+  <div role="note">
+    <ul>
+      <li>Apache Hadoop ecosystem</li>
+      <li>versioning is great for things like wiki pages</li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</section>
+
+
 <!-- TEMPLATE
+
+<section>
+  <div style="text-align: center; margin-top:10%;">
+    <img src="images/.jpg" height="80%" />
+  </div>
+  <div role="note">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</section>
 
 <section>
   <h1></h1>
