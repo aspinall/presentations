@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 
 <meta charset="utf-8">
-<title>Seven Languages</title>
+<title>7x7x7 Languages</title>
 
 <!-- Your Slides -->
 <!-- One section is one slide -->
 
 <section>
-    <!-- This is the first slide -->
-    <h1>Seven Languages</h1>
-    <footer>by Craig Aspinall</footer>
+  <!-- This is the first slide -->
+  <h1>7x7x7 Languages</h1>
+  <footer>by Craig Aspinall</footer>
+  <div role="note">
+    <ul>
+      <li>Name</li>
+      <li>Freelance developer and coach</li>
+      <li>looking at 7 OS languages and 7 features per language</li>
+      <li>purpose of exploring the programming language landscape</li>
+    </ul>
+  </div>
 </section>
 
 <section>
@@ -26,6 +34,15 @@
       <li>Haskell</li>
     </ul>
   </div>
+  <div role="note">
+    <ul>
+      <li>talk inspired by the book</li>
+      <li>read a couple of years ago</li>
+      <li>will cover the same languages in different order</li>
+      <li>will cover some features not covered by the book</li>
+      <li>I'm not an expert</li>
+    </ul>
+  </div>
 </section>
 
 <section>
@@ -33,11 +50,29 @@
   <div style="text-align: center;">
     <img src="images/information-overload.jpg" width="80%"/>
   </div>
+  <div role="note">
+    <ul>
+      <li>almost all the features are explained by code examples</li>
+      <li>massive amount of content to get through</li>
+      <li>I won't explain each code example in details</li>
+      <li>All the content is on github so you can look thru it later</li>
+      <li>That said, those of a weak disposition should leave now</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>hello_world.rb</h3>
   <script src="https://gist.github.com/4158791.js?file=hello_world.rb"></script>
+  <div role="note">
+    <ul>
+      <li>No talk about programming languages is complete without hello world</li>
+      <li>Let's start with Ruby</li>
+      <li>Probably the most familiar to most people</li>
+      <li>Who codes in Ruby?</li>
+      <li>You can correct me later!</li>
+    </ul>
+  </div>
 </section>
 
 <section>
@@ -45,46 +80,116 @@
   <div style="text-align: center;">
     <img src="images/lost-in-translation.jpg" style="height: 80%" />
   </div>
+  <div role="note">
+  <ul>
+    <li>Interpreted languages are not compiled to native machine code</li>
+    <li>they may be compiled to some intermediate byte code</li>
+    <li>and then run on a VM which compiles to native code on the fly</li>
+  </ul>
+</div>
 </section>
 
 <section>
   <h3>imperative.rb</h3>
   <script src="https://gist.github.com/4158791.js?file=imperative.rb"></script>
+  <div role="note">
+  <ul>
+    <li>Ruby is imperative</li>
+    <li>we have to provide step by step instructions how to do things</li>
+    <li></li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>strong_typing.rb</h3>
   <script src="https://gist.github.com/4158791.js?file=strong_typing.rb"></script>
+  <div role="note">
+  <ul>
+    <li>Ruby is strongly typed</li>
+    <li>which means that we can't coerce data into other types</li>
+    <li>we have to be explicit about any type conversions that are to occur</li>
+  </ul>  
+  </div>
 </section>  
 
 <section>
   <h3>duck_typing.rb</h3>
   <script src="https://gist.github.com/4158791.js?file=duck_typing.rb"></script>
+  <div role="note">
+  <ul>
+    <li>Ruby is also dynamically typed</li>
+    <li>type information isn't used until runtime</li>
+    <li>we can store values of different types in the same variable</li>
+    <li>also supports duck typing, if it walks like a duck...</li>
+    <li>this e.g. shows  we don't care what types the values are so long as they have to_i</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>pure_object_oriented.rb</h3>
   <script src="https://gist.github.com/4158791.js?file=pure_object_oriented.rb"></script>
+  <div role="note">
+  <ul>
+    <li>Ruby is pure OO, everything is an object</li>
+    <li>even literals like integers</li>
+    <li>uses class based inheritance, most people will be familiar with</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>multiple_inheritance.rb</h3>
   <script src="https://gist.github.com/4158791.js?file=multiple_inheritance.rb"></script>
+  <div role="note">
+  <ul>
+    <li>Ruby support multiple inheritance through mixins</li>
+    <li>This example shows that Duck is derived from Bird</li>
+    <li>but mixes in the functionality of Quack</li>
+    <li>has access to functionaly of both</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>open_classes.rb</h3>
   <script src="https://gist.github.com/4158791.js?file=open_classes.rb"></script>
+  <div role="note">
+  <ul>
+    <li>Ruby has open classes</li>
+    <li>means we can re-open an existin class definition and modify it</li>
+    <li>in this e.g. I used OC as an ingenious way to rick roll you all!</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>hello_world.pl</h3>
   <script src="https://gist.github.com/4163565.js?file=hello_world.pl"></script>
+  <div role="note">
+    <ul>
+    <li>Prolog is a very different beast to Ruby</li>
+    <li>How many Prolog devs out there?</li>
+    <li>I found this language fascinating</li>
+    <li>let's take a look</li>
+    <li>this e.g. shows  we don't care what types the values are so long as they have to_i</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>logic_programming.pl</h3>
   <script src="https://gist.github.com/4163565.js?file=logic_programming.pl"></script>
+  <div role="note">
+  <ul>
+    <li>Prolog is a logic programming language</li>
+    <li>this e.g. colours a map of australia using 3 colors</li>
+    <li>no 2 adjacent states have the same colour</li>
+    <li>we'll disect this code in a minute</li>
+  </ul>  
+  </div>
+
 </section>
 
 <section>
@@ -106,11 +211,26 @@ WA = red
   <div style="float: right; margin-right: 5%;">
     <img src="images/australian-states.png" height="80%" />
   </div>
+  <div role="note">
+    <ul>
+    <li>first let's look at the result</li>
+    <li>and what it would look like if we drew it</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>declarative.pl</h3>
   <script src="https://gist.github.com/4163565.js?file=declarative.pl"></script>
+  <div role="note">
+  <ul>
+    <li>Prolog is a declarative language</li>
+    <li>We tell the computer what we want</li>
+    <li>It figures out how to make it happen</li>
+    <li>here we are just giving it some information</li>
+    <li>red and green are different colors, WA and NT are different states</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
@@ -129,66 +249,171 @@ WA = red
 <section>
   <h3>facts.pl</h3>
   <script src="https://gist.github.com/4163565.js?file=facts.pl"></script>
+   <div role="note">
+ <ul>
+    <li>in previous e.g. different was a compound term representing a fact</li>
+    <li>here we state facts about the like of various animated characters</li>
+    <li>Prolog doesn't know anything about likes or different</li>
+    <li>it just remembers that we applied those facts to these arguments</li>
+  </ul>    
+  </div>
 </section>
 
 <section>
   <h3>rules.pl</h3>
   <script src="https://gist.github.com/4163565.js?file=rules.pl"></script>
+  <div role="note">
+  <ul>
+    <li>to make use of facts we have rules</li>
+    <li>rules allow Prolog to make inferences based on facts</li>
+    <li>here we add a rule that X and Y are friends if</li>
+    <li>they are not the same person and they like the same thing</li>
+    <li>so wallace and grommit are friends because they both like cheese</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>unification.pl</h3>
   <script src="https://gist.github.com/4163565.js?file=unification.pl"></script>
+   <div role="note">
+ <ul>
+    <li>Prolog doesn't use assignment,it uses unification</li>
+    <li>this basically tries to balance both sides of the equals operator</li>
+    <li>using facts on either side to fill in variables on the other</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>recursion.pl</h3>
   <script src="https://gist.github.com/4163565.js?file=recursion.pl"></script>
+  <div role="note">
+  <ul>
+    <li>declarative languages like Prolog tend to use recursive loops</li>
+    <li>recursion just means that a fn calls itself in it's definition</li>
+    <li>in this e.g. we use a recursive call to ancestor to walk the tree</li>
+    <li>looking for a path between two values</li>
+    <li>* explain eric to kiera *</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>hello_world.io</h3>
   <script src="https://gist.github.com/4167939.js?file=hello_world.io"></script>
+  <div role="note">
+  <ul>
+    <li>Io was my favourite language from the book</li>
+    <li>how many people have heard of it</li>
+    <li>probably the most fun language you've never heard of</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>prototypes.io</h3>
   <script src="https://gist.github.com/4167939.js?file=prototypes.io"></script>
+  <div role="note">
+  <ul>
+    <li>Io uses prototype based OO, similar to JS and Lua</li>
+    <li>There are no classes only objects</li>
+    <li>new objects are cloned from existing ones, which become prototypes</li>
+    <li>objects inherit functionality from their prototypes</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>messages.io</h3>
   <script src="https://gist.github.com/4167939.js?file=messages.io"></script>
+  <div role="note">
+  <ul>
+    <li>In Io everything is an object</li>
+    <li>all communication between objects is by sending messages</li>
+    <li>objects have slots</li>
+    <li>sending the name of a slot to an object returns the value or execute the method in the slot</li>
+    <li>hence calls can be chained</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>introspection.io</h3>
   <script src="https://gist.github.com/4167939.js?file=introspection.io"></script>
+  <div role="note">
+  <ul>
+    <li>Io code can be introspected</li>
+    <li>means we can find out lots of information from the system itself</li>
+    <li>we can retrieve slot names</li>
+    <li>we can get slot contents with eexecuting them</li>
+    <li>we can even get the code of a method in a slot</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>metaprogramming.io</h3>
   <script src="https://gist.github.com/4167939.js?file=metaprogramming.io"></script>
+  <div role="note">
+  <ul>
+    <li>Io supports metaprogramming</li>
+    <li>you can override all sorts of fundamental behaviour</li>
+    <li>here we change the clone method of a Highlander object to make it a singleton</li>
+    <li>There can be only one Highlander</li>
+    <li>you can even change the clone method on the base object, it won't stop you</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>actors.io</h3>
   <script src="https://gist.github.com/4167939.js?file=actors.io"></script>
+  <div role="note">
+  <ul>
+    <li>Io has good concurrency support</li>
+    <li>actors are basically asychronous processes that respond to messages</li>
+    <li>e.g. shows how easy it is to use actors in Io</li>
+    <li>just prefix method call messages with @@</li>
+  </ul>  
+
+  </div>
 </section>
 
 <section>
   <h3>futures.io</h3>
   <script src="https://gist.github.com/4167939.js?file=futures.io"></script>
+  <div role="note">
+  <ul>
+    <li>Io also supports futures</li>
+    <li>for when we want to know the return value of an async call</li>
+    <li>using single @ prefix, a future is returned</li>
+    <li>when the computation is complete the future is replaced with the actual value</li>
+    <li>trying to retrieve the value before then will make it block and wait</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
   <h3>phonebook.txt</h3>
   <script src="https://gist.github.com/4167939.js?file=phonebook.txt"></script>
+  <div role="note">
+  <ul>
+    <li>one of the coolest examples in the book is around DSLs</li>
+    <li>rather than parse this phone book, they just turn it into executable code</li>
+  </ul>  
+  </div>
+
 </section>
 
 <section>
   <h3>dsl.io</h3>
   <script src="https://gist.github.com/4167939.js?file=dsl.io"></script>
+  <div role="note">
+  <ul>
+    <li>Explain the code</li>
+  </ul>  
+  </div>
 </section>
 
 <section>
@@ -239,66 +464,182 @@ WA = red
 <section>
   <h3>hello_world.scala</h3>
   <script src="https://gist.github.com/4179645.js?file=hello_world.scala"></script>
+  <div role="note">
+    <ul>
+      <li>And so we move on to Scala</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>hybrid.scala</h3>
   <script src="https://gist.github.com/4179645.js?file=hybrid.scala"></script>
+  <div role="note">
+    <ul>
+      <li>Scala is part of a new breed of hybrid languages</li>
+      <li>Pure OO like Ruby where everything is an object</li>
+      <li>Supports some of the functional concepts we saw in Haskell</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>type_inference.scala</h3>
   <script src="https://gist.github.com/4179645.js?file=type_inference.scala"></script>
+  <div role="note">
+    <ul>
+      <li>Scala supports type inference</li>
+      <li>Don't have to explicitly declare types where they are implicit</li>
+      <li>e.g. when declaring and initialising variables</li>
+      <li>still needed for function arguments</li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>currying.scala</h3>
   <script src="https://gist.github.com/4179645.js?file=currying.scala"></script>
+  <div role="note">
+    <ul>
+      <li>currying or partial application</li>
+      <li>allows you fix one or more arguments to a function</li>
+      <li>here we have a modulus function</li>
+      <li>by fixing the first parameter to 2, we create an even predicate fn</li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>operator_overloading.scala</h3>
   <script src="https://gist.github.com/4179645.js?file=operator_overloading.scala"></script>
+  <div role="note">
+    <ul>
+      <li>operators in scala are just functions</li>
+      <li>we can define our own or override existing ones</li>
+      <li>here we use + to perform multiplication</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>tuples.scala</h3>
   <script src="https://gist.github.com/4179645.js?file=tuples.scala"></script>
+  <div role="note">
+    <ul>
+      <li>tuples are sets of values that can be passed around</li>
+      <li>the values don't have to be of the same type (unlike coll's)</li>
+      <li>we use them to conveniently assign multiple variables</li>
+      <li>also a way of returning multiple results from a function</li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>xml_literals.scala</h3>
   <script src="https://gist.github.com/4179645.js?file=xml_literals.scala"></script>
+  <div role="note">
+    <ul>
+      <li>scala supports XML literals</li>
+      <li>you can include XML directly in your code</li>
+      <li>makes paramterized templates really easy</li>
+      <li>obviously XML is a very popular data interchage format</li>
+      <li>having support baked into the language can't hurt</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>implicit_conversion.scala</h3>
   <script src="https://gist.github.com/4179645.js?file=implicit_conversion.scala"></script>
+  <div role="note">
+    <ul>
+      <li>my favourite scala feature is implicit conversion</li>
+      <li>this allows you to define default conversions between data types</li>
+      <li>scala will then apply those conversion automatically for you</li>
+      <li>** work through example **</li>
+      <li>Makes scala feel more like a dynamic language such as Ruby</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>hello_world.clj</h3>
   <script src="https://gist.github.com/4184946.js?file=hello_world.clj"></script>
+  <div role="note">
+    <ul>
+      <li>Our penultimate language is Clojure</li>
+      <li>A modern implementation of LISP</li>
+      <li>I believe Michael Neale is talking about Clojure next</li>
+      <li>He can correct all the mistakes that I make</li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>homoiconic.clj</h3>
   <script src="https://gist.github.com/4184946.js?file=homoiconic.clj"></script>
+  <div role="note">
+    <ul>
+      <li>Like all LISPs, Clojure is homoiconic</li>
+      <li>everything is a list, including code and data</li>
+      <li>first element is assumed to be a function, remainder are arguments</li>
+      <li>quotes prevent evaluation of the list</li>
+      <li>you can explicitly evaluate a list to get a result</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>macros.clj</h3>
   <script src="https://gist.github.com/4184946.js?file=macros.clj"></script>
+  <div role="note">
+    <ul>
+      <li>macros are forms that are expanded before the code is executed</li>
+      <li>they give us a way to extend the language</li>
+      <li>we can't create an unless fn because body is always evaluated</li>
+      <li>but using a macro, we can get the behaviour we wanted</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>read-eval-print-loop</h3>
   <script src="https://gist.github.com/4184946.js?file=read-eval-print-loop"></script>
+  <div role="note">
+    <ul>
+      <li>LISPs (and many of the languages we've looked at) have REPLs</li>
+      <li>Read Evaluate Print Loops</li>
+      <li>A means of interacting with the language</li>
+      <li>and manipulating programs when they are running</li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>list_comprehension.clj</h3>
   <script src="https://gist.github.com/4184946.js?file=list_comprehension.clj"></script>
+  <div role="note">
+    <ul>
+      <li>Clojure supports list comprehensions</li>
+      <li>a shorthand way of performing operations using one or many lists</li>
+      <li>e.g. combine values from two lists to create a third list</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
@@ -306,92 +647,254 @@ WA = red
   <div align="center">
     <img src="images/persistent-data-structure.png" style="height: 80%"/>
   </div>
+  <div role="note">
+    <ul>
+      <li>persistent data structures</li>
+      <li>provide immutability in a space efficient way</li>
+      <li>sharing parts of the structure that are common</li>
+      <li>we can see two different roots and the shared portions</li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>stm.clj</h3>
   <script src="https://gist.github.com/4184946.js?file=stm.clj"></script>
+  <div role="note">
+    <ul>
+      <li>software transaction memory wraps state changes in txs</li>
+      <li>if we want to change state it has to be done in context of a transaction</li>
+      <li>otherwise we will get an exception</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>multimethods.clj</h3>
   <script src="https://gist.github.com/4184946.js?file=multimethods.clj"></script>
+  <div role="note">
+    <ul>
+      <li>clojure supports a method dispatch system called multimethods</li>
+      <li>a form of runtime polymorphism</li>
+      <li>you define the dispatch criteria</li>
+      <li>much more than just type and number of parameters, also use values</li>
+      <li>here we provide different implementations of area according to shape property in a map</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>hello_world.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=hello_world.erl"></script>
+  <div role="note">
+    <ul>
+      <li>Last but not least, we have Erlang</li>
+      <li>We have stolen some of Erlangs thunder</li>
+      <li>but it still has plenty left to give</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>eager_evaluation.erl</h3>
   <script src="https://gist.github.com/4191655.js?file=eager_evaluation.erl"></script>
+  <div role="note">
+    <ul>
+      <li>eager evaluation means that arguments to functions are evaluated when passed</li>
+      <li>unlike Haskell</li>
+      <li>in this e.g. we can see that both paths execute regardless</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>forced_lazy.erl</h3>
   <script src="https://gist.github.com/4191655.js?file=forced_lazy.erl"></script>
+  <div role="note">
+    <ul>
+      <li>we can force lazy evaluation by passing functions instead</li>
+      <li>then the fn is only executed when that path is chosen</li>
+      <li>this approach can work even in languages like Java</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>single_assignment.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=single_assignment.erl"></script>
+  <div role="note">
+    <ul>
+      <li>Single assigment means that variables are immutable</li>
+      <li>they can only be assigned once</li>
+      <li>any attempt to assign a new value results in an exception</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>pattern_matching.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=pattern_matching.erl"></script>
+  <div role="note">
+    <ul>
+      <li>pattern matching is supported in a number of the languages we've looked at</li>
+      <li>allows us to extract values from data structures</li>
+      <li>e.g shows how to do this in Erlang with maps and lists</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>bit_matching.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=bit_matching.erl"></script>
+  <div role="note">
+    <ul>
+      <li>Erlang's telecoms history is revealed in it's dealing with bit matching</li>
+      <li>Really useful when dealing with binary wire protocols</li>
+      <li>e.g. shows 4 values being packed into 2 bytes</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>lightweight_processes.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=lightweight_processes.erl"></script>
+  <div role="note">
+    <ul>
+      <li>threads are the basic unit of concurrency and require orchestration to share state</li>
+      <li>processes have their own address space but considered much more heavyweight</li>
+      <li>Erlang uses lightweight processes which are more like threads but isolated from each other</li>
+      <li>processes communicate with each other by sending messages using the ! operator</li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>translate.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=translate.erl"></script>
+  <div role="note">
+    <ul>
+      <li>this is the code that receives the messages</li>
+      <li>note that it uses recursive looping</li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>roulette.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=roulette.erl"></script>
+  <div role="note">
+    <ul>
+      <li>erlang is famous for it's robustness</li>
+      <li>made possible with the use of monitors</li>
+      <li>here's a russian roulette process that kills itself when it receives the number 3</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>doctor.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=doctor.erl"></script>
+  <div role="note">
+    <ul>
+      <li>and this is the monitor process</li>
+      <li>starts the roulette process and monitors it</li>
+      <li>restarts it if it dies</li>
+      <li>note that it stores the handle to the roulette process in the revolver atom</li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>monitoring.erl</h3>
   <script src="https://gist.github.com/4187187.js?file=monitoring.erl"></script>
 </section>
+  <div role="note">
+    <ul>
+      <li>and here's the whole thing working</li>
+      <li>we have to remember to prompt the monitor to start the process</li>
+      <li>then we can send messages to the revolver</li>
+      <li>when it does accidentally kill itself, the process restarts</li>
+      <li>and we can continue using it</li>
+    </ul>
+  </div>
 
 <section>
   <h3>hotswap_v1.erl</h3>
   <script src="https://gist.github.com/4191655.js?file=hotswap_v1.erl"></script>
+  <div role="note">
+    <ul>
+      <li>Erlang's final party piece is hot code swapping</li>
+      <li>This allows us to update code whilst a system is running</li>
+      <li>without any downtime</li>
+      <li>here we have a v1 of a simple echo process </li>
+      <li>notice the version number aand that it prefixes responses with Msg:</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>hotswap_v2.erl</h3>
   <script src="https://gist.github.com/4191655.js?file=hotswap_v2.erl"></script>
+  <div role="note">
+    <ul>
+      <li>and here's V2 where the responses are prefixed with Echo:</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>hotswap</h3>
   <script src="https://gist.github.com/4191655.js?file=hotswap"></script>
+  <div role="note">
+    <ul>
+      <li>Here's the REPL session where we run this code</li>
+      <li>First we compile and test v1</li>
+      <li>Then we update the code to v2 and compile it</li>
+      <li>Now when we call the same function we get the new behaviour</li>
+      <li>And this works when you're accessing a REPL remotely too</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h3>OK, You Can Breathe Again!</h3>
   <div style="text-align:center;">
     <img src="images/head-explosion.jpg" height="80%"/>
+  </div>
+  <div role="note">
+    <ul>
+      <li>OK, that's it!</li>
+      <li>Hopefully your brains haven't exploded as much as mine did trying to put this together</li>
+      <li>The main takeaway is that programming languages are very varied</li>
+      <li>You should stick to just using one</li>
+      <li>learning somethign different will make you a better programmer whatever language you use</li>
+    </ul>
   </div>
 </section>
 
@@ -401,6 +904,8 @@ WA = red
     <li><a href="http://pragprog.com/book/btlang">pragprog.com/book/btlang</a></li>
     <li><a href="mailto:craig.aspinall@gmail.com">craig.aspinall@gmail.com</a></li>
     <li><a href="http://twitter.com/aspinall">@aspinall</a></li>
+    <li><a href="http://github.com/aspinall">github.com/aspinall</a></li>
+    <li><a href="http://craigaspinall.com">craigaspinall.com</a></li>
     <li><a href="http://sixdegreespodcast.com">sixdegreespodcast.com</a></li>
     <li><a href="http://codingbynumbers.com">codingbynumbers.com</a></li>
   </ul>
